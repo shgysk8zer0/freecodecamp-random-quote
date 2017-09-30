@@ -8,9 +8,29 @@
 		<script type="application/javascript" src="js/index.min.js" async="" nomodule=""></script>
 		<link rel="stylesheet" href="css/styles/index.css" media="screen"></link>
 	</head>
-	<body>
+	<body class="border-box">
 		<header></header>
-		<main></main>
+		<main id="quote-target" class="background-primary"></main>
 		<footer></footer>
+		<template id="quote-template">
+			<div class="card quote">
+				<blockquote class="font-main">
+					<svg class="icon current-color">
+						<use xlink:href="img/icons.svg#quote" />
+					</svg>
+					<span data-prop="text"></span>
+					<br />
+					- <i><cite data-prop="by"></cite></i>
+				</blockquote>
+				<a href="https://twitter.com/share?url&amp;text" role="button" target="_blank" class="color-alt background-primary no-text-decoration"  data-action="tweet">
+					<svg class="current-color icon">
+						<use xlink:href="img/icons.svg#twitter" />
+					</svg>
+				</a>
+				<button type="button" data-action="random-quote" class="color-alt background-primary cursor-pointer">
+					New quote
+				</button>
+			</div>
+		</template>
 	</body>
 </html>
