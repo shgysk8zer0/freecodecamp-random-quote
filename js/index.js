@@ -26,7 +26,4 @@ function getQuote() {
 	target.append(template);
 }
 
-$(window).ready(() => {
-	$('.cursor-wait').removeClass('cursor-wait');
-	getQuote();
-}, {once: true});
+$(window).ready(getQuote, {once: true});
