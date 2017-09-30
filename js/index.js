@@ -15,12 +15,12 @@ function getQuote() {
 	$(target).empty();
 
 	$('[data-prop="text"]', template).text = quote.text;
-	$('[data-prop="by"]', template).text = quote.by;
+	$('[data-prop="by"]', template).text = quote.by || 'Unknown';
 	$('[data-action="random-quote"]', template).click(getQuote);
 	$('[data-action="tweet"]', template).each(tweetBtn => {
 		const url = new URL(tweetBtn.href);
 		url.searchParams.set('url', location.href);
-		url.searchParams.set('text', `Random quote:\n"${quote.text}"\n- ${quote.by}\n`);
+		url.searchParams.set('text', `Random quote:\n"${quote.text}"\n- ${quote.by || 'Unknown'}\n`);
 		tweetBtn.href = url.toString();
 	});
 	target.append(template);
