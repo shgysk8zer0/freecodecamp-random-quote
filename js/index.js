@@ -20,7 +20,7 @@ function getQuote() {
 	$('[data-action="tweet"]', template).each(tweetBtn => {
 		const url = new URL(tweetBtn.href);
 		url.searchParams.set('url', location.href);
-		url.searchParams.set('text', `Random quote: > ${quote.text} - ${quote.by}`);
+		url.searchParams.set('text', `Random quote: "${quote.text}" - ${quote.by}`);
 		tweetBtn.href = url.toString();
 	});
 	target.append(template);
