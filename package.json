@@ -1,8 +1,8 @@
 {
-  "name": "",
-  "version": "",
-  "description": "",
-  "keywords": [],
+  "name": "freecodcamp-random-quote",
+  "version": "0.1.0",
+  "description": "FreeCodeCamp: Build a Random Quote Machine",
+  "keywords": ["FreeCodeCamp", "random-quote"],
   "author": {
     "name": "Chris Zuber",
     "email": "chris@chriszuber.com",
@@ -13,10 +13,10 @@
   "license": "GPL-3.0",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/shgysk8zer0/freecodecamp-random-quote"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/shgysk8zer0/freecodecamp-random-quote/issues"
   },
   "engines": {
     "npm": ">=3.5"
